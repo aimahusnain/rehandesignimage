@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import ImageSection from "@/components/imagesection";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,10 +15,11 @@ export default function Home() {
         <Button>Click Me!</Button>
       </div>
       <div className="w-full flex flex-col justify-center items-center py-28">
-        <div className="absolute top-28 right-64 flex rounded-2xl rotate-12 w-[300px] h-72 outline bg-transparent justify-center items-center" />
-        <div className="relative flex rounded-2xl rotate-12 w-[55%] h-72 outline bg-[#5554D4] justify-center items-center">
+        <div className="absolute top-24 right-52 flex rounded-2xl rotate-[24deg] w-[380px] h-[400px] outline bg-transparent justify-center items-center" />
+        <div className="relative flex rounded-2xl rotate-[24deg] w-[380px] h-[400px] outline bg-[#5554D4] justify-center items-center">
           Rehan Image
         </div>
+      <Image src='/rehanimage.png' alt="Rehan Image" className="absolute -top-11 right-[135px]" width={454} height={552}  />
       </div>
     </main>
   );
